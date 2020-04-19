@@ -17,6 +17,10 @@ public class Channel {
 	private String quality;
 	private String url;
 	private List<Comment> comments;
+	/**
+	 * 返回此频道的所有评论
+	 * @return
+	 */
 	public String getId() {
 		return id;
 	}
@@ -49,14 +53,14 @@ public class Channel {
 	}
 	@Override
 	public int hashCode() {
-		final int prime = 31;
+		final int prime = 37;
 		int result = 1;
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((quality == null) ? 0 : quality.hashCode());
 		result = prime * result + ((title == null) ? 0 : title.hashCode());
 		return result;
 	}
-	@Override
+	
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
